@@ -83,9 +83,10 @@ def all_holidays_with_bbq(holiday_hash)
 #array = []
 holiday_hash.collect do |season, holidays|
 binding.pry
-  if holidays.values.include?("BBQ")
-   holidays 
-    end
+  holidays.select do |holiday,supplies|
+  supplies.include?("BBQ")
+  #holidays 
+    end.keys
 end
 end
 #holiday_hash gives you a season and its holidays
