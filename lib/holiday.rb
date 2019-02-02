@@ -81,7 +81,7 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
 #array = []
-holiday_hash.collect do |season, holiday|
+holiday_hash.collect do |season, holidays|
 #binding.pry
   holidays.select do |holiday,supplies|
   supplies.include?("BBQ")
