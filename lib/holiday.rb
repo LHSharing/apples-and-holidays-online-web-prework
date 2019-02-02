@@ -87,7 +87,7 @@ holiday_hash.collect do |season, holidays|
   supplies.include?("BBQ")
   #holidays 
     end.keys
-end
+end.flatten
 end
 #holiday_hash gives you a season and its holidays
   #you want to loop over the holidays
