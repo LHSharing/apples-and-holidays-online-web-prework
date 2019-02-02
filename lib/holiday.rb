@@ -80,11 +80,11 @@ end
 end
 
 def all_holidays_with_bbq(holiday_hash)
-#binding.pry
 #array = []
 holiday_hash.collect do |season,holidays|
   if holidays.values.include?("BBQ")
    holidays 
+binding.pry
     end
 end
 end
